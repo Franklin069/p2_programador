@@ -1,0 +1,25 @@
+1) Iniciando o projeto com Node.js
+- Comando no Terminal: npm init -y
+
+2) Instalando os pacotes express, mysql2, body-parser, ejs
+- Comando no Terminal: npm install express mysql2 body-parser ejs nodemon
+
+EXTRA: instalando somente o pacote 'nodemon'
+- Comando no Terminal: npm install nodemon
+- Executando a aplicação: nodemon app.js
+
+3) Instalando o pacote 'express-session'
+para proteção de rotas
+- Comando no Terminal: npm install express-session
+
+4) Criando a pasta chamada 'views' na
+pasta raiz do projeto
+- mover os arquivos em HTML para dentro dela
+- modificar a extensão para '.ejs'
+
+5) Criando o arquivo principal do projeto
+chamado app.js
+
+) Executando o projeto
+- Comando no Terminal: node app.js
+- Digite o seguinte endereço no navegador -> localhost:3000

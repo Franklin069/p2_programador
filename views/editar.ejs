@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Agência de Viagens</title>
+</head>
+<body>
+    <h1>Editar cliente</h1>
+    
+    <form action="/editar-cliente/<%= cliente.id_cliente %>" method="post">
+        <label for="">Nome do cliente:</label><br>
+        <input type="text" name="nome" placeholder="Nome completo" value="<%= cliente.nome %>"><br><br>
+
+        <label for="">Endereço do cliente:</label><br>
+        <input type="text" name="end_cliente" placeholder="Endereço" value="<%= cliente.end_cliente %>"><br><br>
+
+        <label for="">CEP:</label><br>
+        <input type="text" name="cep" placeholder="CEP" value="<%= cliente.cep %>"><br><br>
+
+        <label for="">Telefone do cliente:</label><br>
+        <input type="text" name="tel_cliente" placeholder="Telefone" value="<%= cliente.tel_cliente %>"><br><br>
+
+        <label for="">E-mail do cliente:</label><br>
+        <input type="text" name="email" placeholder="E-mail" value="<%= cliente.email %>"><br><br>
+        
+        <button type="submit">Salvar</button>
+    </form>
+</body>
+</html>

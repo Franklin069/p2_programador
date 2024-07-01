@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Agência de Viagens</title>
+</head>
+<body>
+    <h1>Lista de clientes</h1>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Endereço</th>
+                <th>CEP</th>
+                <th>Telefone</th>
+                <th>E-mail</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% clientes.forEach(cliente => { %>
+                <tr>
+                    <td><%= cliente.id_cliente %></td>
+                    <td><%= cliente.nome %></td>
+                    <td><%= cliente.end_cliente %></td>
+                    <td><%= cliente.cep %></td>
+                    <td><%= cliente.tel_cliente %></td>
+                    <td><%= cliente.email %></td>
+                    <td>
+                        <a href="/editar/<%= cliente.id_cliente %>">Editar</a>
+                        <a href="/excluir/<%= cliente.id_cliente %>" onclick="return confirm('Tem certeza?')">Excluir</a>
+                    </td>
+                </tr>
+                <% }) %>
+        </tbody>
+    </table>
+</body>
+</html>

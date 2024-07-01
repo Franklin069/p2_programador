@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Agência de Viagens</title>
+</head>
+<body>
+    <h1>Login</h1>
+    <% if (typeof erro !== 'undefined' && erro !== null){%>
+        <h3 style="color: red;"><%= erro %></h3>
+    <% }%>    
+    <form action="/login" method="post">
+        <input type="email" name="email" placeholder="E-mail"><br><br>
+        <input type="password" name="senha" placeholder="Senha"><br><br>
+        <button type="submit">Entrar</button>
+    </form>
+</body>
+</html>
