@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Agência de Viagens</title>
+    <link rel="stylesheet" href="visualizacao.css">
+</head>
+<body>
+    <h1>Dados do(a) cliente querido(a) {{ cliente['nome']}}</h1>
+
+    <h3>Nome do cliente:</h3>
+    <span>{{ cliente['nome']}}</span><br>
+
+    <h3>Endereço:</h3>
+    <span>{{ cliente['end_cliente']}}</span><br>
+
+    <h3>CEP:</h3>
+    <span>{{ cliente['cep']}}</span><br>
+
+    <h3>Telefone:</h3>
+    <span>{{ cliente['tel_cliente']}}</span><br>
+
+    <h3>E-mail:</h3>
+    <span>{{ cliente['email']}}</span><br><br>
+
+    <a href="/editar/{{ cliente['id_cliente']}}"><button>Editar</button></a>
+    <a href="/listar"><button>Voltar</button></a>
+
+</body>
+</html>

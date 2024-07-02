@@ -263,7 +263,7 @@ app.post('/login', (req, res)=>{
     const {email, senha} = req.body
     comando = 'select email, senha from usuario where email = ? and senha = ?'
     conexao.query(comando, [email, senha], (error, results)=>{
-        if(error){            
+        if(error){
             console.error('Erro ao entrar: ', error)
         } else if( results.length > 0) {
             // Criando a sessão do usuário
@@ -297,7 +297,7 @@ app.get('/sair', (req, res)=>{
             console.error('Erro ao sair: ', error);
             res.status(500).send('Erro ao sair.');
         } else {
-            res.clearCookie('connect.sid', { path: '/' });            
+            res.clearCookie('connect.sid', { path: '/' });
             console.log('Sessão destruída e cookie removido.'); // Emite a mensagem de sessão destruída
             res.redirect('/');
         }
